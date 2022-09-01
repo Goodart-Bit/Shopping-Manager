@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shopping Manager</string>
+    <string name="product_name_hint">Insert product\'s name</string>
+    <string name="product_price_hint">Insert product\'s price</string>
+    <string name="product_type_hint">Insert product\'s type</string>
+    <string name="product_description_hint">Insert product\'s description</string>
+</resources>
