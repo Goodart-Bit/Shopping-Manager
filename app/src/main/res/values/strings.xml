@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">Shopping Manager</string>
-    <string name="product_name_hint">Insert product\'s name</string>
-    <string name="product_price_hint">Insert product\'s price</string>
-    <string name="product_type_hint">Insert product\'s type</string>
-    <string name="product_description_hint">Insert product\'s description</string>
+    <string name="name_label">Name:</string>
+    <string name="product_name_hint">Enter the product\'s name</string>
+    <string name="price_label">Price:</string>
+    <string name="product_price_hint">Enter the product\'s price</string>
+    <string name="type_label">Type:</string>
+    <string name="product_type_hint">Enter the product\'s type</string>
+    <string name="description_label">Description:</string>
+    <string name="product_description_hint">Enter the product\'s description</string>
+    <string name="send_btn">send</string>
 </resources>
