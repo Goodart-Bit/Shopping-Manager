@@ -6,8 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/view_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/product_details"
+        app:layout_constraintStart_toStartOf="@+id/product_details" />
+
     <TextView
-        android:id="@+id/details"
+        android:id="@+id/details_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -22,12 +34,12 @@
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="@string/name_label"
-        app:layout_constraintBottom_toBottomOf="@+id/email_address"
-        app:layout_constraintStart_toStartOf="@+id/details"
-        app:layout_constraintTop_toTopOf="@+id/email_address" />
+        app:layout_constraintBottom_toBottomOf="@+id/product_name"
+        app:layout_constraintStart_toStartOf="@+id/details_label"
+        app:layout_constraintTop_toTopOf="@+id/product_name" />
 
     <EditText
-        android:id="@+id/email_address"
+        android:id="@+id/product_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -38,19 +50,19 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/details" />
+        app:layout_constraintTop_toBottomOf="@+id/details_label" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="@string/type_label"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/product_type"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toTopOf="@+id/product_type" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/product_type"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -58,21 +70,21 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/product_type_hint"
-        app:layout_constraintEnd_toEndOf="@+id/email_address"
+        app:layout_constraintEnd_toEndOf="@+id/product_name"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/email_address" />
+        app:layout_constraintTop_toBottomOf="@+id/product_name" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:text="@string/price_label"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toBottomOf="@+id/product_price"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toTopOf="@+id/product_price" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/product_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -80,13 +92,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/product_price_hint"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/product_type"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/product_type" />
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/product_details"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
@@ -95,18 +107,18 @@
         android:gravity="top"
         android:hint="@string/product_description_hint"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/save_button"
+        app:layout_constraintEnd_toEndOf="@+id/product_price"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/product_price" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="@string/send_btn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintEnd_toEndOf="@+id/product_details" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

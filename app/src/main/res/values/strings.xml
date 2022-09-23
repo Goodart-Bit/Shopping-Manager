@@ -9,4 +9,5 @@
     <string name="description_label">Description:</string>
     <string name="product_description_hint">Enter the product\'s description</string>
     <string name="send_btn">send</string>
+    <string name="view_btn">view products</string>
 </resources>
